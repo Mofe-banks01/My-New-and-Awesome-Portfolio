@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 165rem;
+  font-family: sans-serif serif "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serifs Georgia, "Times New Roman", Times, serif "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif Arial, Helvetica, sans-serif Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+}
+:root {
+  --green: #03e23b;
+  --blue: #0004e2e5;
+  --red: #e91313e0;
+  --yellow: #f3e40bf1;
+  --orange: #eb8b0eda;
+  --black: #000000e8;
+  --white: #ffffffec;
+  --grey: #262829;
+  --cream: #f6e6cb;
+  --dcream: #eacea3;
+  --beige: #cdad93;
+  --terracotta: #b9816d;
+  --dterracotta: #885444;
+  --peach: #e5ae8a;
+  --dgreen: #1b6d0bdc;
+  --aliceblue: #4ddcf5bd;
+}
+.main-landing-page {
+  background-image: linear-gradient(to bottom, #0021a7, #1f1b3d);
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #50525a, #000000)
+    url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1520&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  position: relative;
+  padding: 5%;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landing-page-image {
+  max-width: 20.5rem;
+  height: 20rem;
+  position: relative;
+  border-radius: 50%;
+  top: 20%;
+  margin: 0 auto;
+  background-image: url(https://pbs.twimg.com/profile_images/1741148677140287488/8rmfcaJ8_400x400.jpg);
+}
+.landing-page-glass {
+  width: 25rem;
+  height: 105rem;
+  position: absolute;
+  top: 0;
+  bottom: 10%;
+  right: 5%;
+  rotate: 45deg;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  border: 0px solid rgba(255, 255, 255, 0.15);
+}
+.landing-page-glass-2 {
+  width: 25rem;
+  height: 105rem;
+  position: absolute;
+  top: 35;
+  bottom: 5%;
+  right: 80%;
+  left: 5%;
+  rotate: 45deg;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.17);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.9px);
+  -webkit-backdrop-filter: blur(1.8px);
+  border: 0px solid rgba(255, 255, 255, 0.15);
+}
+name1 {
+  position: absolute;
+  top: 47%;
+  left: 15%;
+  font-size: 4.1rem;
+  margin: 0 auto;
+  color: var(--white);
+}
+.main-landing-page name2 {
+  position: absolute;
+  top: 47%;
+  right: 15%;
+  font-size: 4.1rem;
+  margin: 0 auto;
+  color: var(--white);
+}
+name3 {
+  font-size: 2.35rem;
+  position: absolute;
+  top: 5rem;
+  background: none;
+  transition: transform 1.35s linear;
+}
+name3 nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+name4 {
+  font-size: 2.35rem;
+  position: absolute;
+  bottom: 5rem;
+  text-shadow: transform 1.35s linear;
+}
+name4 nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+name5 {
+  font-size: 2.35rem;
+  position: absolute;
+  top: 5rem;
+  right: 5%;
+  transition: transform 1.35s linear;
+}
+name5 nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+name6 {
+  font-size: 2.35rem;
+  position: absolute;
+  bottom: 5rem;
+  right: 5%;
+  ransition: transform 1.35s linear;
+}
+name6 nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+name3:hover,
+name4:hover,
+name5:hover,
+name6:hover {
+  background-image: linear-gradient(54deg, green, yellow);
+  width: 7.5rem;
+  margin: 0 auto;
+  height: 2.35rem;
+  text-align: center;
+  z-index: 1;
+  border-radius: 0.5px;
+  transform: rotate(360deg);
+  transition: transform 1.85s linear;
+  -webkit-transition-duration: 1.85s;
+  -moz-transition-duration: 1.85s;
+  -o-transition-duration: 1.85s;
+}
+name3:hover nav,
+name4:hover nav,
+name5:hover nav,
+name6:hover nav {
+  z-index: 2;
+  margin-top: -1.19rem;
+  color: var(--white);
+}
+.main-landing-page-intro {
+  height: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  display: block;
+  top: 0;
+  left: 0;
+  position: relative;
+  padding: 0%;
+  background-image: linear-gradient(to bottom, 45deg, #afb9e0, #a78989);
+  cursor: pointer;
+}
+.main-landing-page-welcome-heading {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 5%;
+}
+.main .main-landing-page-welcome-heading {
+}
