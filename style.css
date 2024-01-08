@@ -3,6 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/* ////////////HTML DOC SCROLL BAR //////////*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.795);
+}
+html::-webkit-scrollbar-thumb {
+  background: #2e3cfd;
+}
+
+/* /////////HTML SCROLLBAR ENDS////////////// */
 
 body {
   margin: 0 auto;
@@ -32,28 +51,21 @@ body {
   --dgreen: #1b6d0bdc;
   --aliceblue: #4ddcf5bd;
 }
+
 .main-landing-page {
+  position: relative;
   background-image: linear-gradient(to bottom, #0021a7, #1f1b3d);
   width: 100%;
   margin: 0 auto;
   height: 100vh;
   background-image: linear-gradient(to bottom, #50525a, #000000)
     url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1520&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  position: relative;
-  padding: 5%;
+  padding: 2.5%;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.landing-page-image {
-  max-width: 20.5rem;
-  height: 20rem;
-  position: relative;
-  border-radius: 50%;
-  top: 20%;
-  margin: 0 auto;
-  background-image: url(https://pbs.twimg.com/profile_images/1741148677140287488/8rmfcaJ8_400x400.jpg);
-}
+
 .landing-page-glass {
   width: 25rem;
   height: 105rem;
@@ -86,92 +98,143 @@ body {
   -webkit-backdrop-filter: blur(1.8px);
   border: 0px solid rgba(255, 255, 255, 0.15);
 }
-name1 {
+.short-landing-page-intro {
   position: absolute;
-  top: 47%;
-  left: 15%;
-  font-size: 4.1rem;
+  top: 30%;
+  left: 12.5%;
+  width: 35%;
+  padding: 1.15rem;
   margin: 0 auto;
-  color: var(--white);
+  display: block;
+  place-items: center;
+  background-color: none;
 }
-.main-landing-page name2 {
+.short-landing-page-intro h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.5em 0;
+  letter-spacing: 3px;
+  font-family: 'serif','Helvetica' , 'Arial';
+}
+.short-landing-page-intro p {
+  font-size: 1.7em;
+  margin: 0 0 0.85em 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.short-landing-page-intro button {
+  padding: 0.375rem;
+}
+.short-landing-page-intro-image{
   position: absolute;
-  top: 47%;
-  right: 15%;
-  font-size: 4.1rem;
-  margin: 0 auto;
-  color: var(--white);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  top: 20.5%;
+  left: 50%;
+  display: block;
+  place-items: center;
 }
-name3 {
-  font-size: 2.35rem;
+.short-landing-page-intro-image:hover{
+  perspective: 300px;
+  box-shadow: 20px;
+  transition-duration: 3s;
+}
+.main-nav-link-1 {
   position: absolute;
   top: 5rem;
   background: none;
   transition: transform 1.35s linear;
+  padding: 0;
 }
-name3 nav a {
+.main-nav-link-1 name3 span a {
+  font-size: 1.71rem;
   text-decoration: none;
   color: var(--white);
 }
 
-
-name4 {
-  font-size: 2.35rem;
+.main-nav-link-2 {
   position: absolute;
   bottom: 5rem;
   text-shadow: transform 1.35s linear;
+  padding: 0;
 }
-name4 nav a {
+.main-nav-link-2 name4 span a {
+  font-size: 1.71rem;
   text-decoration: none;
   color: var(--white);
 }
-name5 {
-  font-size: 2.35rem;
+
+.main-nav-link-3 {
   position: absolute;
   top: 5rem;
-  right: 5%;
+  right: 2.5%;
   transition: transform 1.35s linear;
+  padding: 0;
 }
-name5 nav a {
+.main-nav-link-3 name5 span a {
+  font-size: 1.71rem;
   text-decoration: none;
   color: var(--white);
 }
-name6 {
-  font-size: 2.35rem;
+.main-nav-link-4 {
   position: absolute;
   bottom: 5rem;
-  right: 5%;
-  ransition: transform 1.35s linear;
+  right: 2.5%;
+  transition: transform 1.35s linear;
+  padding: 0;
 }
-name6 nav a {
+.main-nav-link-4 name6 span a {
+  font-size: 1.71rem;
   text-decoration: none;
   color: var(--white);
 }
-name3:hover,
-name4:hover,
-name5:hover,
-name6:hover {
-  background-image: linear-gradient(54deg, green, yellow);
-  width: 7.5rem;
-  margin: 0 auto;
-  height: 2.35rem;
-  text-align: center;
-  z-index: 1;
-  border-radius: 0.5px;
-  transform: rotate(360deg);
-  transition: transform 1.85s linear;
-  -webkit-transition-duration: 1.85s;
-  -moz-transition-duration: 1.85s;
-  -o-transition-duration: 1.85s;
+.main-nav-link-1 name3 span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-name3:hover nav,
-name4:hover nav,
-name5:hover nav,
-name6:hover nav {
-  z-index: 2;
-  margin-top: -1.19rem;
-  color: var(--white);
+.main-nav-link-2 name4 span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.main-nav-link-3 name5 span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav-link-4 name6 span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav-link-1 name3 span a {
+  display: block;
+  transform: rotate(180deg);
+  transition: transfrom 0.6s cubic-bezier(0.99, -0.01, 0.17, 0.19);
+}
+.main-nav-link-2 name4 span a {
+  display: block;
+  transform: rotate(180deg);
+  transition: transfrom 0.6s linear;
+}
+.main-nav-link-1:hover name3 span a {
+  transform: rotate(270deg);
+  transition: transfrom 2s cubic-bezier(0.99, -0.01, 0.17, 0.19);
+}
+
 .main-landing-page-intro {
   height: 100%;
   border-radius: 0;
@@ -180,7 +243,7 @@ name6:hover nav {
   top: 0;
   left: 0;
   position: relative;
-  padding: 0%;
+  padding: 5%;
   background-image: linear-gradient(to bottom, 45deg, #afb9e0, #a78989);
   cursor: pointer;
 }
@@ -188,7 +251,6 @@ name6:hover nav {
   width: 100%;
   margin: auto;
   position: relative;
-  padding: 5%;
 }
 .main .main-landing-page-welcome-heading {
 }
