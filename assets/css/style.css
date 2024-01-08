@@ -114,9 +114,9 @@ body {
   background-color: none;
 }
 .short-landing-page-intro h1 {
-  font-size: 4Imlem;
+  font-size: 4em;
   margin: 0 0 0.5em 0;
-  letter-spacing: 3px;
+  letter-spacing: 1.75px;
    font-family: 'Tektur';
     font-weight: 200;
 }
@@ -248,22 +248,15 @@ body {
   transition: transfrom 2s cubic-bezier(0.99, -0.01, 0.17, 0.19);
 }
 
-.main-landing-page-intro {
-  height: 100%;
-  border-radius: 0;
-  overflow: hidden;
+
+
+.main-landing-page-intro{
+  padding: 2.5%;
+  width: 100%;
+  height: auto;
   display: block;
+  place-items: center;
+  position: relative;
   top: 0;
   left: 0;
-  position: relative;
-  padding: 5%;
-  background-image: linear-gradient(to bottom, 45deg, #afb9e0, #a78989);
-  cursor: pointer;
-}
-.main-landing-page-welcome-heading {
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-.main .main-landing-page-welcome-heading {
 }
