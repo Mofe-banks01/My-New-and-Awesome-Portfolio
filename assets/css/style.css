@@ -15,14 +15,20 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.795);
+  background: rgba(255, 255, 255, 0.986);
 }
 html::-webkit-scrollbar-thumb {
-  background: #2e3cfd;
+  background: rgb(11, 11, 17);
+ 
 }
 
 /* /////////HTML SCROLLBAR ENDS////////////// */
-
+@font-face {
+  src: url(tektur-variablefont_wdthwght-webfont.woff) format(woff),
+  url(tektur-variablefont_wdthwght-webfont.woff2) format(woff2) ;
+  font-family: 'Tektur';
+    font-weight: 200;
+}
 body {
   margin: 0 auto;
   max-width: 165rem;
@@ -54,12 +60,10 @@ body {
 
 .main-landing-page {
   position: relative;
-  background-image: linear-gradient(to bottom, #0021a7, #1f1b3d);
+  background-image: linear-gradient(to right , 5deg , #fff , #ffe);
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #50525a, #000000)
-    url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1520&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   padding: 2.5%;
   overflow: hidden;
   background-size: cover;
@@ -67,7 +71,7 @@ body {
 }
 
 .landing-page-glass {
-  width: 25rem;
+  width: 15rem;
   height: 105rem;
   position: absolute;
   top: 0;
@@ -82,7 +86,7 @@ body {
   border: 0px solid rgba(255, 255, 255, 0.15);
 }
 .landing-page-glass-2 {
-  width: 25rem;
+  width: 15rem;
   height: 105rem;
   position: absolute;
   top: 35;
@@ -110,16 +114,17 @@ body {
   background-color: none;
 }
 .short-landing-page-intro h1 {
-  font-size: 3.5em;
+  font-size: 4Imlem;
   margin: 0 0 0.5em 0;
   letter-spacing: 3px;
-  font-family: 'serif','Helvetica' , 'Arial';
+   font-family: 'Tektur';
+    font-weight: 200;
 }
 .short-landing-page-intro p {
-  font-size: 1.7em;
+  font-size: 1.6em;
   margin: 0 0 0.85em 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+   font-family: 'Tektur';
+    font-weight: 200;
 }
 .short-landing-page-intro button {
   padding: 0.375rem;
@@ -130,13 +135,13 @@ body {
   height: 40rem;
   border-radius: 50%;
   top: 20.5%;
-  left: 50%;
+  left: 55%;
   display: block;
   place-items: center;
 }
 .short-landing-page-intro-image:hover{
-  perspective: 300px;
-  box-shadow: 20px;
+  
+  box-shadow: 20px 20px 20px 20px;
   transition-duration: 3s;
 }
 .main-nav-link-1 {
@@ -149,7 +154,9 @@ body {
 .main-nav-link-1 name3 span a {
   font-size: 1.71rem;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
+  font-family: 'Tektur';
+    font-weight: 200;
 }
 
 .main-nav-link-2 {
@@ -161,7 +168,9 @@ body {
 .main-nav-link-2 name4 span a {
   font-size: 1.71rem;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
+  font-family: 'Tektur';
+    font-weight: 200;
 }
 
 .main-nav-link-3 {
@@ -174,7 +183,9 @@ body {
 .main-nav-link-3 name5 span a {
   font-size: 1.71rem;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
+  font-family: 'Tektur';
+    font-weight: 200;
 }
 .main-nav-link-4 {
   position: absolute;
@@ -186,7 +197,9 @@ body {
 .main-nav-link-4 name6 span a {
   font-size: 1.71rem;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
+  font-family: 'Tektur';
+    font-weight: 200;
 }
 .main-nav-link-1 name3 span {
   text-transform: uppercase;
